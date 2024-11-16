@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* Body and Background */
+body {
+    background-color: white;
+    color: #0f0f0f;
+}
+
+/* NAv Styling */
+#navbar {
+    background: linear-gradient(to right, rgba(95, 94, 94, 0.8), rgba(123, 104, 238, 0.8));
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo img {
+    border-radius: 10px;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+/* Navbar*/
+#navbar {
+    background-color: #343a40; /* Dark background for navbar */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #navbar .navbar-brand img {
+    max-height: 40px; /* Logo size */
+  }
+  
+  /* Navbar Links */
+  #navbar .nav-link {
+    color: #f8f9fa; /* Light color for links */
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  #navbar .nav-link:hover,
+  #navbar .nav-link.active {
+    color: #007bff; /* Blue color on hover and active */
+  }
+  
+  /* Toggler Button Icon */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon,
+  .fa-bars {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  /* Dropdowns and Search Bar */
+  .dropdown-menu {
+    background-color: #f8f9fa;
+  }
+  
+  .form-control {
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    padding: 5px 20px;
+  }
+  
+  .btn-outline-success {
+    color: white;
+    border-color: #007bff;
+    border-radius: 20px;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    /* Center elements for mobile */
+    #navbar .navbar-brand {
+      margin: auto;
+    }
+  
+    /* Full-width collapse on mobile */
+    .navbar-collapse {
+      background-color: #343a40;
+      padding: 15px;
+    }
+  
+    /* Center items on mobile */
+    .navbar-nav .nav-item {
+      text-align: center;
+      width: 100%;
+    }
+  
+    /* Center search input and button on mobile */
+    .form-control,
+    .btn-outline-success {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 90px;
+    background: url('img/mini.jpg') center/cover no-repeat;
+}
+
+.hero-text {
+    padding-top: 60px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #d86394;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: hsl(325, 44%, 44%);
+}
+.hero-video source{
+    border-radius: 10px;
+    margin-top: 20px; /* Adjust spacing */
+ }
+
+
+ .poster-container {
+    width: 300px; /* Adjust to desired size (e.g., 200px for small, 400px for medium) */
+    margin: 0 auto; /* Center container */
+}
+
+.special-poster {
+    padding: 10px;
+}
+
+.poster img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 5px; /* Optional: round corners */
+}
+
+/* Featured Section */
+.featured {
+    padding: 30px 0;
+    background: linear-gradient(to right, rgba(95, 94, 94, 0.8), rgba(123, 104, 238, 0.8));
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.category-container {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-card {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;  /* Reduced padding */
+    width: 100%; /* Changed from 100vh to 100% */
+    border-radius: 8px; /* Slightly smaller radius */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    text-align: center;
+    border: 2px solid #2C6A4F;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Center the cards horizontally */
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.btn-shop {
+    display: inline-block;
+    background-color: #f4b400;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-shop:hover {
+    background-color: #e6a900;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .category-container {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+        padding-top: 40px;
+    }
+
+    .category-card {
+        padding: 20px; /* More padding on smaller screens */
+        max-width: 90%; /* Allow cards to use more space on small screens */
+    }
+
+    .featured h2 {
+        font-size: 1.8rem; /* Smaller heading on mobile */
+    }
+
+    .btn-shop {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 8px 16px; /* Adjust button size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .featured h2 {
+        font-size: 1.6rem; /* Further reduce heading size on very small screens */
+    }
+
+    .category-card h3 {
+        font-size: 1.5rem; /* Reduce card title size */
+    }
+
+    .category-card p {
+        font-size: 0.9rem; /* Smaller text on mobile */
+    }
+
+    .btn-shop {
+        font-size: 0.8rem; /* Even smaller button text */
+        padding: 6px 12px; /* Adjust button padding */
+    }
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #0078D7;
+}
+
+.container > div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 40px);
+    min-width: 300px;
+    text-align: center;
+}
+
+.container .title {
+    color: #0078D7;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container > div {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+
+/* Styling for the Weekly Specials section */
+#specials {
+    background-color: #dfdada;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#specials h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#specials p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Flexbox container for the specials cards */
+.specials-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual special card styling */
+.special-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.special-card h3 {
+    font-size: 1.5em;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.special-card p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.special-card:last-child {
+    align-self: center; /* Centers the last card vertically */
+    margin: 0 auto; /* Centers the last card horizontally */
+}
+
+/* Hover effect for the card */
+.special-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .special-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .special-card {
+        width: 100%;
+    }
+}
+
+
+/* Why Shop Section */
+.why-shop {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.why-shop h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.reasons-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.reason-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reason-item h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.reason-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    #logo img {
+        width: 45px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Make navbar links stack vertically */
+    .navbar-nav {
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    /* Hide search form on smaller screens to save space */
+    #navbar form {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-toggle {
+        display: inline; /* Show toggle button on mobile */
+    }
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .special-card {
+        width: 100%;
+    }
+
+    .featured h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        height: 800px;
+    }
+    .hero-text{
+        padding-top: 500px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .category-card h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar-toggler .fa-bars {
+        font-size: 20px;
+    }
+
+    /* Adjust navbar item font size */
+    .nav-item .nav-link {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+    
+    .hero {
+        height: 600px;
+    }
+    .hero-text{
+        padding-top: 400px;
+    }
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .hero .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .featured h2 {
+        font-size: 1.5rem;
+    }
+    
+    .category-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .category-card p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #dfdada;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f4b400;
+}
+html{
+    scroll-behavior: smooth;
+}

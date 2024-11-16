@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Meat - MMINISTORE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: white;
+            color: #d32f2f;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #f8d7da;
+        }
+
+        /* Section Styles */
+        main {
+            padding: 20px;
+        }
+
+        .product-category h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+
+        .product-category p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+            font-size: 1.2em;
+        }
+
+        /* Product List Styles */
+        .product-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 180px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Odd/Even Card Backgrounds */
+        .product-item:nth-child(odd) .card {
+            background-color: #fff5f5;
+        }
+
+        .product-item:nth-child(even) .card {
+            background-color: #ffeaea;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #f9c74f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fresh Meat</h1>
+    </header>
+
+    <main>
+        <section class="product-category">
+            <h2>Explore Our Fresh Meat</h2>
+            <p>Greetings meat lovers! Looking for fresh and delicious cuts? Explore here and find the perfect selection for you. Here are some of our bestsellers:</p>
+            <ul class="product-list">
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/pork.png" alt="Pork">
+                        <p>Pork</p>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/beef.jpg" alt="Beef">
+                        <p>Beef</p>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/chicken.jpg" alt="Chicken">
+                        <p>Chicken</p>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/lamb.png" alt="Lamb">
+                        <p>Lamb</p>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/venison.jpg" alt="Venison">
+                        <p>Venison</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MMINISTORE. All Rights Reserved.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy Drinks - MMINISTORE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: white;
+            color: #007bff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #e9ecef;
+        }
+
+        /* Section Styles */
+        main {
+            padding: 20px;
+        }
+
+        .product-category h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .product-category p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+            font-size: 1.2em;
+        }
+
+        /* Product List */
+        .product-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item:nth-child(odd) .card {
+            background-color: #f0f8ff;
+        }
+
+        .product-item:nth-child(even) .card {
+            background-color: #e6f7ff;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drinks</h1>
+    </header>
+
+    <main>
+        <section class="product-category">
+            <h2>Explore Our Drinks</h2>
+            <p>Greetings drink lovers! We've got your favorite drinks here for you to enjoy and savor. Check out some of our bestsellers:</p>
+            <ul class="product-list">
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/water.jpg" alt="Water Bottle">
+                        <p>Water</p>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/gatorade.jpg" alt="Energy Drinks">
+                        <p>Energy Drinks</p>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/cocktails.jpg" alt="Cocktails">
+                        <p>Cocktails</p>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/soda.jpg" alt="Soda">
+                        <p>Soda</p>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        <img src="img/sparkling.jpg" alt="Sparkling Drinks">
+                        <p>Sparkling Drinks</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MMINISTORE. All Rights Reserved.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>

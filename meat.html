@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Produce - MMINISTORE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8f9;
+            color: #333;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 600;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #fff;
+            color: #28a745;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #f1f1f1;
+        }
+         
+        .product-list {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .product-item {
+                flex: 1 1 200px; /* Allow flexible sizing with a minimum width */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 150px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .card i {
+                font-size: 2em;
+                color: #28a745;
+            }
+
+            .card p {
+                font-size: 1.1em;
+                margin-top: 10px;
+                color: #333;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .product-item:nth-child(odd) .card {
+                background-color: #f9f9f9; /* Lighter background for odd items */
+            }
+
+            .product-item:nth-child(even) .card {
+                background-color: #e9f7e1; /* Light green background for even items */
+            }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #f9c74f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fresh Produce</h1>
+        
+    </header>
+
+    <main>
+        <section class="product-category">
+            <h2>Explore Our Fresh Produce</h2>
+            <p>Our fresh produce includes organic fruits and vegetables sourced from local farms. Here are some of our bestsellers:</p>
+            <ul class="product-list">
+                <li class="product-item">
+                    <div class="card">
+                        <i class="fas fa-apple-alt"></i>
+                        <p>Apples</p>
+                        <img src="" alt="">
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        
+                        <p>Bananas</p>
+                        <img src="" alt="">
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                    
+                        <p>Spinach</p>
+                        <img src="" alt="">
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                     
+                        <p>Tomatoes</p>
+                        <img src="" alt="">
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div class="card">
+                        
+                        <p>Carrots</p>
+                        <img src="" alt="">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MMINISTORE. All Rights Reserved.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>
